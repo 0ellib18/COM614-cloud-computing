@@ -10,4 +10,6 @@ This will allow you to merge later class examples into your repository.
 You can copy the session material into this repo and add / modify these sessions here.
 You can also update your personal learning record as in this folder.
 
+small change
+
 ---

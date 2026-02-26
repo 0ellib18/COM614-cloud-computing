@@ -143,7 +143,7 @@ services:
   # USING https://github.com/antmelekhin/docker-systemd IMAGES
   
   # https://hub.docker.com/layers/antmelekhin/docker-systemd/almalinux-10/
-  ## test container - with systemd
+  ## test container - no systemd
 #  almas1:
 #    container_name: almas1
 #    image: antmelekhin/docker-systemd:almalinux-10
@@ -170,8 +170,6 @@ services:
       - ssh-keys:/ssh-keys
     post_start:
       - command: ["sh", "-c", "/share/generate-ansible-user-ssh.sh ${PASSPHRASE-}"]
-    depends_on:
-      -  semaphore
     networks:
       N020:
         ipv4_address: 172.20.0.22
@@ -189,8 +187,6 @@ services:
       - ssh-keys:/ssh-keys
     post_start:
       - command: ["sh", "-c", "/share/generate-ansible-user-ssh.sh ${PASSPHRASE-}"]
-    depends_on:
-      -  ubuntu1
     networks:
       N020:
         ipv4_address: 172.20.0.23

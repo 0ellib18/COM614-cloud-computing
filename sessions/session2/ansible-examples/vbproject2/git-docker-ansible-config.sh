@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script should be run as ansible user
+# This script should be run as ansible user 
 # It contains some extra configurations to pull in git repo
 
 #set -x

@@ -92,3 +92,24 @@ $ cat id_rsa | SSH_ASKPASS=./ps.sh ssh-add -
 
 ```
 
+# integrations to semaphore
+
+start docker compose service
+
+```
+curl -X POST http://localhost:3000/semaphore/semaphore/api/integrations/jk8qowte1qs7c1lo \
+    -H 'semaphore-integration-command: start-docker-compose-service' \
+    -H 'auth-match: minad1234' \
+    -d '{
+}'
+```
+
+stop docker compose service
+
+```
+curl -X POST http://localhost:3000/semaphore/semaphore/api/integrations/jk8qowte1qs7c1lo \
+    -H 'semaphore-integration-command: stop-docker-compose-service' \
+    -H 'auth-match: minad1234' \
+    -d '{
+}'
+```

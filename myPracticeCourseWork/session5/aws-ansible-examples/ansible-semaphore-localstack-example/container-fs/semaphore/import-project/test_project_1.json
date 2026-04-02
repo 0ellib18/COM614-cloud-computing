@@ -115,7 +115,7 @@
   "repositories": [
     {
       "git_branch": "main",
-      "git_url": "https://github.com/gallenc/COM614-cloud-computing.git",
+      "git_url": "https://github.com/0ellib18/COM614-cloud-computing.git",
       "name": "COM614-cloud-computing",
       "ssh_key": "None"
     }
